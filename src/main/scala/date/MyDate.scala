@@ -2,7 +2,14 @@ package date
 
 object MyDate {
   object DaysOfWeek extends Enumeration {
-    val SATURDAY, SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY = Value
+    type DaysOfWeek = Value
+    val SATURDAY = Value("Saturday")
+    val SUNDAY = Value("Sunday")
+    val MONDAY = Value("Monday")
+    val TUESDAY = Value("Tuesday")
+    val WEDNESDAY = Value("Wednesday")
+    val THURSDAY = Value("Thursday")
+    val FRIDAY = Value("Friday")
   }
 
   val dayNames = Array(
